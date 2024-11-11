@@ -1,0 +1,16 @@
+{
+  "name": "js-libaries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marquee-js": "^1.0.3",
+    "pointer.js": "^0.1.1-beta"
+  }
+}

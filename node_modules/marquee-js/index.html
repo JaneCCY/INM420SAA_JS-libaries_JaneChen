@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MarqueeJs</title>
+  <meta charset="utf-8"/>
+  <link rel="Shortcut Icon" href="https://s.gravatar.com/avatar/1a96e618fb381aa8071da782438bb2c8?s=80"/>
+  <meta name="keywords" content="MarqueeJs">
+  <meta name="description" content="MarqueeJs">
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="apple-mobile-web-app-title" content="MarqueeJs">
+  <style>
+    #test {
+      font-size: 50px;
+      display: inline-block;
+      margin: 100px auto 0;
+      width: 500px;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+<article style="text-align: center">
+  <div id="test">
+    <label id="test-label">我是滚动字幕，宽度500，速度10</label>
+  </div>
+</article>
+<script src="./marquee.js"></script>
+<script>
+  marqueeJs(document.getElementById('test-label'), { width: 500, speed: 10 });
+</script>
+</body>
+</html>

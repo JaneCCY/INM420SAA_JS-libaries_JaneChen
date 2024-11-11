@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Julius+Sans+One&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Oswald:wght@200..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
+        rel="stylesheet">
+    <title>JS library</title>
+</head>
+
+<body>
+    <!-- header starts -->
+    <header>
+
+        <div class="logo">
+            <div class="burger-menu" id="burgerMenu">
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+            </div>
+            <img src="assets/img/logo.png" alt="logo">
+
+        </div>
+        <!-- navigation list -->
+        <nav>
+            <ul>
+                <a href="">
+                    <li>Menu</li>
+                </a>
+                <a href="">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Products</li>
+                </a>
+                <a href="">
+                    <li>Contact</li>
+                </a>
+                <a href="">
+                    <li>Locations</li>
+                </a>
+            </ul>
+        </nav>
+        <!-- search icon(it's not expanding idk why) -->
+        <div class="search-icon" id="searchIcon">
+            <img src="assets/img/search.png">
+        </div>
+        <input type="text" id="searchField" class="search-field" style="display: none;" placeholder="Search...">
+        </nav>
+        <div class="carousel-text-overlay">TORONTO FURNITURE </br><span>MADE IN CANADA</span></div>
+        <!-- Photo Carousel -->
+
+        <div class="glide">
+
+
+            <div class="glide__track" data-glide-el="track">
+
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="assets/img/headerPhoto4.jpg" alt=""></li>
+                    <li class="glide__slide"><img src="assets/img/headerPhoto5.jpg" alt=""></li>
+                    <li class="glide__slide"><img src="assets/img/headerPhoto3.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&#10094;</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#10095;</button>
+        </div>
+
+
+    </header>
+    <!-- header ends -->
+
+    <!-- main starts -->
+    <main>
+        <section id="home">
+            <div class="containerBox">
+                <div class="row">
+                    <div class="col-4 subtitleThree">
+                        <ul>
+                            <li>BED</li>
+                            <li>TABLE</li>
+                            <li>SOFA</li>
+                            <li>LAMP</li>
+                            <li>CABINET</li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-md-4 subtitleP1">
+                        <p>Discover a curated collection of stylish, functional, and beautifully crafted furniture
+                            designed to elevate your living space. From contemporary essentials to timeless classics,
+                            our pieces blend comfort with sophistication, helping you create a home that reflects your
+                            unique style."</br></br>
+                            Transform your home into a haven of comfort and style with our modern furniture selections.
+                            Each piece is crafted with quality and innovation, offering elegance, durability, and
+                            design-forward details that make every room inviting and truly yours.</br>
+                            Explore premium furniture collections designed for every room in your home. From cozy living
+                            room sets to functional office solutions, each piece is created with attention to detail and
+                            built to last, giving you a space to love for years to come.</p>
+                    </div>
+                    <div class="col-4 subtitleP2">
+                        <p>Our furniture is crafted with sustainability and artistry at heart. Using eco-friendly
+                            materials and working with skilled artisans, we bring you unique, high-quality pieces that
+                            not only enhance your space but also support a better planet.</br></br>
+                            Less is more. Our minimalist furniture collection combines sleek design with practical
+                            functionality, creating beautiful, uncluttered spaces that feel spacious and calm. Perfect
+                            for those who appreciate simplicity without compromising on style.Our furniture isn’t just
+                            decor; it’s an experience. Each piece is thoughtfully crafted to make a lasting impression
+                            in your home, blending form, function, and quality materials. Discover furniture that brings
+                            style and substance into every corner of your space.</p>
+                        <button type="button" class="btn btn-outline-dark">More About Us</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- products slider -->
+            <h2><span>PRODUCTS</span> PRODUCTS <span>PRODUCTS</span></h2>
+            <div class="carousel-container">
+                <div class="glide2" id="productCarousel">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide2">
+                                <div class="slide-content">
+                                    <img src="assets/img/table.png" alt="">
+                                    <p class="caption">THE TABLE </p>
+                                    <p class="captionPrice">$799.99</p>
+                                    <button type="button" class="btn btn-outline-dark">View More</button>
+                                </div>
+                            </li>
+                            <li class="glide__slide2">
+                                <div class="slide-content">
+                                    <img src="assets/img/sofa.png" alt="">
+                                    <p class="caption">THE SOFA</p>
+                                    <p class="captionPrice">$3799.99</p>
+                                    <button type="button" class="btn btn-outline-dark">View More</button>
+                                </div>
+                            </li>
+                            <li class="glide__slide2">
+                                <div class="slide-content">
+                                    <img src="assets/img/sofa2.png" alt="">
+                                    <p class="caption">THE SOFA</p>
+                                    <p class="captionPrice">$4799.99</p>
+                                    <button type="button" class="btn btn-outline-dark">View More</button>
+                                </div>
+                            </li>
+                            <li class="glide__slide2">
+                                <div class="slide-content">
+                                    <img src="assets/img/cabinet.png" alt="">
+                                    <p class="caption">THE CABIN</p>
+                                    <p class="captionPrice">$2799.99</p>
+                                    <button type="button" class="btn btn-outline-dark">View More</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&#10094;</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- marquee -->
+            <div class="marquee-element">
+                TORONTO FURNITURE TORONTO FURNITURE TORONTO FURNITURE
+            </div>
+        </section>
+
+    </main>
+    <!-- main ends -->
+
+    <!-- footer starts -->
+    <footer>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-6">Discover timeless designs crafted for your unique lifestyle—where quality meets
+                    comfort, and every piece transforms your space into a place you'll love to live in. <span>Elevate your
+                    home with curated furniture that blends style and functionality, making every room a
+                    reflection of you and your modern living needs.</span></div>
+                <div class="col-sm-6 col-md-3">
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Gift Card</a></li>
+                        <li><a href="">Return</a></li>
+                        <li><a href="">Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <ul>
+                        <li><a href="">Career</a></li>
+                        <li><a href="">PopUp Store</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Policy</a></li>
+                        <li><a href="">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- email input box -->
+        <div class="bottomBox">
+            <form class="d-flex" role="search">
+                <input class="search-input" type="search" placeholder="EMAIL" aria-label="Search">
+                <button class="search-btn error" type="submit">
+                    <i class="bi bi-arrow-right-circle">→</i>
+                </button>
+            </form>
+            <div class="TextBox">Copyright © Furniture 2024</div>
+        </div>
+
+        <!-- back to top -->
+        <button id="backToTopBtn" class="back-to-top-btn">⇑</button>
+
+    </footer>
+    <!-- footer ends -->
+
+    <!-- Js libraies -->
+    <script src="https://cdn.jsdelivr.net/npm/mouse.js/dist/mouse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="assets/js/marquee.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
